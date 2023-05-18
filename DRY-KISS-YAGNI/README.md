@@ -4,15 +4,15 @@ Bu makalede, `"DRY"` (Don't Repeat Yourself - Kendini Tekrar Etme), `"KISS"` (Ke
 
 ## DRY - Don't Repeat Yourself
 
-Don't Repeat Yourself, yani Kendini Tekrar Etme, yazılım geliştirme sürecinde sıkça kullanılan bir tasarım prensibidir. DRY prensibi, kodun tekrarlanmasını en aza indirerek, kodun daha okunabilir, sürdürülebilir ve yeniden kullanılabilir olmasını hedefler. DRY prensibinin temel özellikleri aşağıdadır.
+Don't Repeat Yourself, yani Kendini Tekrar Etme, yazılım geliştirme sürecinde sıkça kullanılan bir tasarım prensibidir. DRY prensibi, kodun tekrarlanmasını en aza indirerek, kodun daha okunabilir, sürdürülebilir ve yeniden kullanılabilir olmasını hedefler. DRY prensibinin temel özellikleri aşaıdadır.
 
-- Tek Bir Kaynak: DRY prensibi, kodda bir bilginin tek bir yerde bulunmasını savunur. Yani, aynı bilginin birden fazla yerde tekrarlanması yerine, bu bilgi tek bir kaynaktan alınmalıdır. Bu sayede, bilgiyi güncellemek veya değiştirmek gerektiğinde sadece tek bir yerde düzenleme yapmak yeterli olur.
+- DRY prensibi, kodda bir bilginin tek bir yerde bulunmasını savunur. Yani, aynı bilginin birden fazla yerde tekrarlanması yerine, bu bilgi tek bir kaynaktan alınmalıdır. Bu sayede, bilgiyi güncellemek veya değiştirmek gerektiğinde sadece tek bir yerde düzenleme yapmak yeterli olur.
 
-- Tekrarların Kaldırılması/Düzenlenmesi: DRY prensibi, kodun tekrarlanmasını önlemeyi amaçlar. Benzer veya aynı işlemler için tekrarlanan kod blokları yerine, bu kod blokları bir fonksiyon veya sınıf içinde yeniden kullanılabilir hale getirilmelidir. Böylelikle, hem kodun boyutu azalır hem de bakım ve iyileştirme süreci kolaylaşır.
+- DRY prensibi, kodun tekrarlanmasını önlemeyi amaçlar. Benzer veya aynı işlemler için tekrarlanan kod blokları yerine, bu kod blokları bir fonksiyon veya sınıf içinde yeniden kullanılabilir hale getirilmelidir. Böylelikle, hem kodun boyutu azalır hem de bakım ve iyileştirme süreci kolaylaşır.
 
-- Bağımlılıkların Yönetimi: DRY prensibi, bağımlılıkların kontrol edilmesini ve en aza indirilmesini de amaçlar. Kodun farklı bölümlerinde aynı bağımlılıkları tekrar etmek yerine, bu bağımlılıklar ortak bir kaynaktan yönetilmelidir. Örneğin, harici bir kütüphane kullanılıyorsa, bu kütüphane yalnızca bir kez dahil edilmeli ve ilgili tüm bölümler tarafından kullanılmalıdır.
+- DRY prensibi, bağımlılıkların kontrol edilmesini ve en aza indirilmesini de amaçlar. Kodun farklı bölümlerinde aynı bağımlılıkları tekrar etmek yerine, bu bağımlılıklar ortak bir kaynaktan yönetilmelidir. Örneğin, harici bir kütüphane kullanılıyorsa, bu kütüphane yalnızca bir kez dahil edilmeli ve ilgili tüm bölümler tarafından kullanılmalıdır.
 
-- Okunabilirlik ve Sürdürülebilirlik: DRY prensibi, kodun okunabilirliği ve sürdürülebilirliği üzerinde olumlu bir etkiye sahiptir. Tekrarlanan kod blokları yerine yeniden kullanılabilir fonksiyonlar veya sınıflar kullanmak, kodun anlaşılabilirliğini artırır. Bu, developer'ların işini kolaylaştırı, hata ayıklama, bakım ve iyileştirme süreçlerini de kolaylaştırır.
+- DRY prensibi, kodun okunabilirliği ve sürdürülebilirliği üzerinde olumlu bir etkiye sahiptir. Tekrarlanan kod blokları yerine yeniden kullanılabilir fonksiyonlar veya sınıflar kullanmak, kodun anlaşılabilirliğini artırır. Bu, developer'ların işini kolaylaştırı, hata ayıklama, bakım ve iyileştirme süreçlerini de kolaylaştırır.
 
 ## KISS - Keep It Simple, Stupid
 
@@ -20,13 +20,13 @@ Keep It Simple, Stupid, yani Basit Tut, Aptal prensibi, bir yazılımın tasarı
 
 Fazla karmaşıklık, yazılımın anlaşılmasını zorlaştırabilir, hatalara yol açabilir ve bakım maliyetlerini artırabilir. Bu nedenle, KISS prensibi, genel gereksinimleri ve tasarımı mümkün olduğunca basit tutmayı teşvik eder. KISS tasarım prensibinin temel özellikleri;
 
-- Basitlik: KISS prensibi, yazılımın olabildiğince basit ve anlaşılır olması gerektiğini savunur. Karmaşık ve gereksiz detaylardan kaçınarak kodun okunabilirliğini artırır. Basitlik, hem kodun başkaları tarafından daha kolay anlaşılmasını sağlar hem de bakım ve geliştirme süreçlerini kolaylaştırır.
+- KISS prensibi, yazılımın olabildiğince basit ve anlaşılır olması gerektiğini savunur. Karmaşık ve gereksiz detaylardan kaçınarak kodun okunabilirliğini artırır. Basitlik, hem kodun başkaları tarafından daha kolay anlaşılmasını sağlar hem de bakım ve geliştirme süreçlerini kolaylaştırır.
 
-- İşlevsellik: KISS prensibi, kodun sadece gerekli işlevleri yerine getirmesini amaçlar. Gereksiz veya kullanılmayan özelliklerin eklenmesinden kaçınılmalıdır. Bu, gereksiz karmaşıklığı önler ve hatalı kod yapısı olma olasılığını azaltır.
+- KISS prensibi, kodun sadece gerekli işlevleri yerine getirmesini amaçlar. Gereksiz veya kullanılmayan özelliklerin eklenmesinden kaçınılmalıdır. Bu, gereksiz karmaşıklığı önler ve hatalı kod yapısı olma olasılığını azaltır.
 
-- Okunabilirlik: KISS prensibi, kodun okunabilirliğine büyük önem verir. Basit ve anlaşılır bir kod, diğer geliştiricilerin kodu daha hızlı anlamasını ve üzerinde çalışmasını kolaylaştırır. İyi ve mantıklı adlandırılmış değişkenler, düzenli bir kod yapısı ve açıklayıcı yorumlar, kodun okunabilirliğini artıran unsurlardır.
+- KISS prensibi, kodun okunabilirliğine büyük önem verir. Basit ve anlaşılır bir kod, diğer geliştiricilerin kodu daha hızlı anlamasını ve üzerinde çalışmasını kolaylaştırır. İyi ve mantıklı adlandırılmış değişkenler, düzenli bir kod yapısı ve açıklayıcı yorumlar, kodun okunabilirliğini artıran unsurlardır.
 
-- Minimal Bağımlılıklar: KISS prensibi, yazılımın dışa bağımlılıklarını en aza indirgemeyi hedefler. Karmaşık veya gereksiz bağımlılıklar yerine, daha basit ve doğrudan çözümler tercih edilir. Bu, projenin yönetimini kolaylaştırır ve yazılımın genel karmaşıklığını azaltır.
+- KISS prensibi, yazılımın dışa bağımlılıklarını en aza indirgemeyi hedefler. Karmaşık veya gereksiz bağımlılıklar yerine, daha basit ve doğrudan çözümler tercih edilir. Bu, projenin yönetimini kolaylaştırır ve yazılımın genel karmaşıklığını azaltır.
 
 ## YAGNI - You Ain’t Gonna Need It
 
